@@ -1,3 +1,15 @@
+$primary-color:#936925;
+
 body{
-    background-color: aquamarine;
+
+background-color: rgb(176, 194, 113);
+
+.btn-primary{
+    color:$primary-color;
+    background-color: aliceblue;
+    padding:8px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
 }

@@ -1,3 +1,11 @@
 body {
-  background-color: aquamarine;
+  background-color: #b0c271;
+}
+body .btn-primary {
+  color: #936925;
+  background-color: aliceblue;
+  padding: 8px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-radius: 4px;
 }
