@@ -13,12 +13,12 @@ a{text-decoration: none;}
     margin: auto;
     width: 80%;
     max-width: 1140px;
-    background-color: rgb(240, 221, 193);
+    /*background-color: rgb(235, 217, 189);*/
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
 }
-header>.container>h1>a{color:#565450;}
+header>.container>h1>a{color:#eee4d2;}
 
 header>.container>nav>ul{
     display:flex;
@@ -28,8 +28,20 @@ header>.container>nav>ul{
 }
 header>.container>nav>ul>li>a{
     line-height: 60px;
-    color:rgb(83, 80, 75);
+    color:#eee4d2;
     font-size: 20px;
+    padding-left: 60px;
+    padding-right:60px;
 }
 /*---------header-end---------*/
+
 /*body*/
+.img-fluid{width: 100%;}
+.row{
+    display:flex;
+    flex-wrap: wrap; /*換行*/
+}
+.col-3{
+    width:25%;
+
+}
