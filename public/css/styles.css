@@ -54,12 +54,24 @@ header > .container > nav > ul > li > a {
   width: 100%;
 }
 
+.img-rounded {
+  border-radius: 5px;
+}
+
+/*.img-circle{border-radius: 100%;}*/
 .row {
   display: flex;
   flex-wrap: wrap;
   /*換行*/
 }
 
+.text-center {
+  text-align: center;
+}
+
 .col-3 {
-  width: 25%;
+  width: calc(100% / 4 - 30px);
+  margin: 15px;
+  /*上右下左*/
+  /*margin:0px 15px 30px 15px*/
 }
