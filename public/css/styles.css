@@ -105,26 +105,19 @@ dt {
 }
 
 /*design list*/
-.bread {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.breaditem {
+.breadcrumb {
   color: #8a857a;
   font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .bul {
-  width: 200px;
-  height: 80px;
+  width: 30%;
   color: #eee4d2;
   display: flex;
   align-items: flex-start;
-}
-
-.bulstretch {
-  align-items: stretch;
+  border-radius: 5px;
 }
 
 .bul li {
@@ -134,23 +127,7 @@ dt {
   line-height: 30px;
 }
 
-.newh3 {
+.new-con {
   display: flex;
-  justify-content: flex-start;
-  padding-left: 300px;
-}
-
-.col-4-2 {
-  display: flex;
-  justify-content: center;
-  background-color: #eee4d2;
-}
-
-.col-4-2 > ul {
-  justify-content: space-around;
-}
-
-.col-4-2 li {
-  width: 75px;
-  height: 75px;
+  width: 70%;
 }
