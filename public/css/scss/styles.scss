@@ -70,3 +70,28 @@ footer{
 }
 dt{font-size: 20px;
 line-height: 1.2em;}
+
+/*design list*/
+.bread{
+    display: flex;
+    justify-content: flex-start;
+    }
+.breaditem{
+    color: #8a857a;
+    font-size: 16px;
+}
+.bul{width: 200px;height: 80px;;color: #eee4d2;
+    display: flex;align-items: flex-start;}
+.bulstretch{align-items: stretch;}
+
+.bul li{margin-bottom: 10px;background-color: #5c7767;text-align: center;
+line-height: 30px;}
+.newh3{display: flex;
+    justify-content: flex-start;
+    padding-left: 300px;
+}
+.col-4-2{display: flex;
+    justify-content: center;
+background-color: #eee4d2;}
+.col-4-2>ul{justify-content:space-around}
+.col-4-2 li{width:75px;height:75px;}
