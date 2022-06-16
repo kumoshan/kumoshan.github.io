@@ -66,6 +66,10 @@ header > .container > nav > ul > li > a {
   /*換行*/
 }
 
+.row2 {
+  display: flex;
+}
+
 /*文字相關格式*/
 .text-center {
   text-align: center;
@@ -84,7 +88,7 @@ header > .container > nav > ul > li > a {
 }
 
 .col-9 {
-  width: calc(100% / 1.33 - 30px);
+  width: calc(100% / 1.33333 - 30px);
   margin: 15px;
 }
 
@@ -128,20 +132,41 @@ dt {
   color: #eee4d2;
   display: flex;
   align-items: flex-start;
-  border-radius: 5px;
+  display: block;
+  width: 200px;
 }
 
 .bul li {
   margin-bottom: 10px;
   background-color: #5c7767;
   text-align: center;
-  line-height: 30px;
+  line-height: 35px;
+  border-radius: 10px;
 }
 
-.w-80 {
-  width: 80%;
+.bul li:hover {
+  background-color: #37483d;
 }
 
-.w-20 {
-  width: 20%;
+main div p {
+  text-align: center;
+}
+
+.breadcrumb a {
+  color: #84b896;
+}
+
+.breadcrumb a:hover {
+  color: #37483d;
+}
+
+.col-9 h3 {
+  color: #3d5446;
+  font-size: 22px;
+}
+
+/*animation*/
+main img:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.8);
 }
