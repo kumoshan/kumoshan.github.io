@@ -71,13 +71,25 @@ header > .container > nav > ul > li > a {
   text-align: center;
 }
 
+/*四欄式*/
 .col-3 {
   width: calc(100% / 4 - 30px);
   margin: 15px;
 }
 
+/*三欄式*/
 .col-4 {
   width: calc(100% / 3 - 30px);
+  margin: 15px;
+}
+
+.col-9 {
+  width: calc(100% / 1.33 - 30px);
+  margin: 15px;
+}
+
+.col-8 {
+  width: calc(100% / 1.5 - 30px);
   margin: 15px;
 }
 
