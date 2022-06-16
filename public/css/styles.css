@@ -177,9 +177,18 @@ main div p {
 /*main img:hover{transition: all .8s ease-in-out;
     transform: scale(0.8);}*/
 /*img*/
+main img:hover {
+  transition: all 0.8s ease-in-out;
+  transform: scale(0.8);
+}
+
+.img-wrap {
+  overflow: hidden;
+}
+
 .img-overlay {
   display: block;
-  background-color: #2f3c34;
+  /*background-color: #2f3c34;*/
   position: relative;
   overflow: hidden;
 }
@@ -188,13 +197,20 @@ main div p {
   vertical-align: top;
 }
 
-.img-overlay > .new-icon {
+.new-icon {
   width: 50px;
   line-height: 50px;
-  color: #8a857a;
-  background-color: #29573b;
+  display: block;
+  color: #38342c;
+  background-color: #5d876d;
   border-radius: 100%;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 20px;
+  left: 20px;
+  text-align: center;
+}
+
+main span {
+  transition: all 0.8s ease-in-out;
+  transform: scale(1.5);
 }
