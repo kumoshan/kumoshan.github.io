@@ -188,12 +188,13 @@ main div p {
   vertical-align: top;
 }
 
-.new-icon {
+.img-overlay > .new-icon {
   width: 50px;
   line-height: 50px;
+  color: #8a857a;
   background-color: #29573b;
   border-radius: 100%;
   position: absolute;
-  top: -50px;
-  left: -50px;
+  top: 50px;
+  left: 50px;
 }
