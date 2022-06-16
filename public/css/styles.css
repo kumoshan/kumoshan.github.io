@@ -128,6 +128,6 @@ dt {
 }
 
 .new-con {
-  display: flex;
   width: 70%;
+  display: flex;
 }
