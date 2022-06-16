@@ -120,6 +120,14 @@ dt {
   line-height: 1.2em;
 }
 
+.col-4 > dd > a {
+  color: #2f3c34;
+}
+
+.col-4 > dd > a:hover {
+  color: #98c3a9;
+}
+
 /*design list*/
 .breadcrumb {
   color: #8a857a;
@@ -166,7 +174,26 @@ main div p {
 }
 
 /*animation*/
-main img:hover {
-  transition: all 0.5s ease-in-out;
-  transform: scale(0.8);
+/*main img:hover{transition: all .8s ease-in-out;
+    transform: scale(0.8);}*/
+/*img*/
+.img-overlay {
+  display: block;
+  background-color: #2f3c34;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-overlay > img {
+  vertical-align: top;
+}
+
+.new-icon {
+  width: 50px;
+  line-height: 50px;
+  background-color: #29573b;
+  border-radius: 100%;
+  position: absolute;
+  top: -50px;
+  left: -50px;
 }

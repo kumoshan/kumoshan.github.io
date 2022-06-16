@@ -86,6 +86,8 @@ footer{
 dt{font-size: 20px;
 line-height: 1.2em;}
 
+.col-4>dd>a{color: #2f3c34;}
+.col-4>dd>a:hover{color: #98c3a9;}
 /*design list*/
 
 .breadcrumb{
@@ -111,8 +113,31 @@ main div p{text-align: center}
 .col-9 h3{color: #3d5446;font-size: 22px;}
 
 /*animation*/
-main img:hover{transition: all .5s ease-in-out;
-    transform: scale(0.8);}
+/*main img:hover{transition: all .8s ease-in-out;
+    transform: scale(0.8);}*/
+
+/*img*/
+.img-wrap{
+}
+.img-overlay{
+    display: block;
+    background-color: #2f3c34;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-overlay>img{
+    vertical-align: top;
+}
+.new-icon{
+    width: 50px;
+    line-height: 50px;
+    background-color: #29573b;
+    border-radius: 100%;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
 
 
 
