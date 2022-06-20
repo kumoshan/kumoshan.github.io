@@ -28,7 +28,8 @@ a {
   /*background-color: rgb(235, 217, 189);*/
   padding-right: 20px;
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header > .container > h1 > a {
@@ -41,11 +42,11 @@ header > .container > nav > ul {
 }
 
 header > .container > nav > ul > li > a {
-  line-height: 60px;
+  line-height: 50px;
   color: #eee4d2;
   font-size: 20px;
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 80px;
+  padding-right: 80px;
   text-align: center;
 }
 
@@ -98,6 +99,198 @@ header > .container > nav > ul > li > a {
   margin: 15px;
 }
 
+.col-1 {
+  width: calc(100% / calc(12/ 1) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-2 {
+  width: calc(100% / calc(12/ 2) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-3 {
+  width: calc(100% / calc(12/ 3) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-4 {
+  width: calc(100% / calc(12/ 4) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-5 {
+  width: calc(100% / calc(12/ 5) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-6 {
+  width: calc(100% / calc(12/ 6) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-7 {
+  width: calc(100% / calc(12/ 7) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-8 {
+  width: calc(100% / calc(12/ 8) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-9 {
+  width: calc(100% / calc(12/ 9) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-10 {
+  width: calc(100% / calc(12/ 10) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-11 {
+  width: calc(100% / calc(12/ 11) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+.col-12 {
+  width: calc(100% / calc(12/ 12) - 30px);
+  margin: 0px 15px 40px 15px;
+}
+
+/*768*/
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: calc(100% / calc(12/ 1) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-2 {
+    width: calc(100% / calc(12/ 2) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-3 {
+    width: calc(100% / calc(12/ 3) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-4 {
+    width: calc(100% / calc(12/ 4) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-5 {
+    width: calc(100% / calc(12/ 5) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-6 {
+    width: calc(100% / calc(12/ 6) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-7 {
+    width: calc(100% / calc(12/ 7) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-8 {
+    width: calc(100% / calc(12/ 8) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-9 {
+    width: calc(100% / calc(12/ 9) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-10 {
+    width: calc(100% / calc(12/ 10) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-11 {
+    width: calc(100% / calc(12/ 11) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-md-12 {
+    width: calc(100% / calc(12/ 12) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+}
+/*1200*/
+@media (min-width: 1200px) {
+  .col-lg-1 {
+    width: calc(100% / calc(12/ 1) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-2 {
+    width: calc(100% / calc(12/ 2) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-3 {
+    width: calc(100% / calc(12/ 3) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-4 {
+    width: calc(100% / calc(12/ 4) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-5 {
+    width: calc(100% / calc(12/ 5) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-6 {
+    width: calc(100% / calc(12/ 6) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-7 {
+    width: calc(100% / calc(12/ 7) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-8 {
+    width: calc(100% / calc(12/ 8) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-9 {
+    width: calc(100% / calc(12/ 9) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-10 {
+    width: calc(100% / calc(12/ 10) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-11 {
+    width: calc(100% / calc(12/ 11) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+
+  .col-lg-12 {
+    width: calc(100% / calc(12/ 12) - 30px);
+    margin: 0px 15px 40px 15px;
+  }
+}
+/*@media screen (max-width: 767px){
+.col-md-6{
+        width: calc(100% / 2 - 30px); margin: 15px;}  
+}
+@media screen (min-width: 1200px){
+    .col-lg-4{width: calc(100% / 3  - 30px); margin: 15px;}  
+    }
+*/
 /*上右下左*/
 /*margin:0px 15px 30px 15px*/
 .col-3 > .title > a {
@@ -222,6 +415,8 @@ main img:hover {
 }
 
 /*0620*/
+/*h1{width: 85%;
+background-color: #2e2d2b;}*/
 .icon-menu {
   float: right;
   width: 15%;
@@ -231,19 +426,79 @@ main img:hover {
   text-align: center;
 }
 
-header > .container > nav {
-  width: 100%;
-  float: left;
+/*超過768以上執行*/
+@media (min-width: 768px) {
+  .icon-menu {
+    display: none;
+  }
+}
+/*min-width 768 end*/
+/*小於767以下執行*/
+@media (max-width: 767px) {
+  header > .container > nav {
+    width: 100%;
+    float: left;
+    display: none;
+  }
+
+  header > .container > nav.active {
+    display: block;
+  }
+
+  header > .container > nav > ul {
+    display: block;
+  }
+
+  header > .container > nav > ul > li {
+    width: 100%;
+  }
+
+  header > .container > nav > ul > li > a {
+    display: block;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
+}
+/*max-width 767 end*/
+/*迴圈*/
+.fz-1 {
+  font-size: 1em;
 }
 
-header > .container > nav > ul {
-  display: block;
+.fz-2 {
+  font-size: 2em;
 }
 
-header > .container > nav > ul > li {
-  width: 100%;
+.fz-3 {
+  font-size: 3em;
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.fz-4 {
+  font-size: 4em;
+}
+
+.fz-5 {
+  font-size: 5em;
+}
+
+.fz-6 {
+  font-size: 6em;
+}
+
+.fz-7 {
+  font-size: 7em;
+}
+
+.fz-8 {
+  font-size: 8em;
+}
+
+.fz-9 {
+  font-size: 9em;
+}
+
+.fz-10 {
+  font-size: 10em;
 }
