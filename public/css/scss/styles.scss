@@ -30,8 +30,9 @@ header>.container>nav>ul>li>a{
     line-height: 60px;
     color:#eee4d2;
     font-size: 20px;
-    padding-left: 92px;
-    padding-right:92px;
+    padding-left: 90px;
+    padding-right:90px;
+    text-align: center;
 }
 /*---------header-end---------*/
 
@@ -151,6 +152,28 @@ main img:hover{transition: all .8s ease-in-out;
     left: 20px;}
 .col-4 div{text-align: center;}
 
+/*0620*/
+.icon-menu{
+    float: right;
+    width: 15%;
+    display: block;
+    background-color: #9bd089;
+    line-height: 45px;
+    text-align: center;
+}
+
+header> .container > nav{
+    width: 100%;
+    float:left;
+}
+header> .container > nav>ul{
+   display: block;
+}
+header> .container > nav>ul>li{
+    width: 100%;
+ }
+.overflow-hidden{
+    overflow: hidden;}
 
 
 
