@@ -62,7 +62,7 @@ margin:15px;}
 margin:15px;}
 
 .col-9{
-    width: calc(100% / 1.33333 - 30px);
+    width: calc(100% / 1.3333333333 - 30px);
 margin:15px;}
 
 .col-8{
@@ -73,7 +73,7 @@ margin:15px;}
 @for $i from 1 through 12{
         .col-#{$i}{$num: calc(12/ #{$i});
             width: calc(100% / #{$num} - 30px)
-        ;margin:0px 15px 40px 15px;}
+        ;margin:0px 15px 0px 15px;}
     }
        
     
@@ -238,6 +238,11 @@ header> .container > nav>ul>li{
 @for $i from 1 through 10{
     .fz-#{$i}{
     font-size:$i*1em;}
+}
+
+order.md{
+display: flex;
+order:1
 }
 
 
