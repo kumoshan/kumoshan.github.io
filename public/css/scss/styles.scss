@@ -20,15 +20,15 @@ a{text-decoration: none;}
     padding-bottom: 10px;
 }
 
-header>.container>h1>a{color:#eee4d2;}
+header>.container h1>a{color:#eee4d2;}
 
-header>.container>nav>ul{
+header>.container nav>ul{
     display:flex;
     justify-content: center;
     
 
 }
-header>.container>nav>ul>li>a{
+header>.container nav>ul>li>a{
     line-height: 50px;
     color:#eee4d2;
     font-size: 20px;
@@ -70,41 +70,51 @@ margin:15px;}
 margin:15px;}
 
 
-@for $i from 1 through 12{
-        .col-#{$i}{$num: calc(12/ #{$i});
-            width: calc(100% / #{$num} - 30px)
-        ;margin:0px 15px 0px 15px;}
+@for $i from 1 through 12 {
+    .col-#{$i}{
+        --num: calc(12 / #{$i});
+        width: calc(100% / var(--num) - 30px);
+        margin: 0px 15px 40px 15px;
     }
+}
        
     
 
 /*768*/
-@media(min-width:768px){
-    
-
-@for $i from 1 through 12{
-    .col-md-#{$i}{$num: calc(12/ #{$i});
-        width: calc(100% / #{$num} - 30px)
-    ;margin:0px 15px 40px 15px;}
-}
+@media (min-width:768px){
+    @for $i from 1 through 12 {
+        .col-md-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
 }
 /*1200*/
-@media(min-width:1200px){
-
-@for $i from 1 through 12{
-    .col-lg-#{$i}{$num: calc(12/ #{$i});
-        width: calc(100% / #{$num} - 30px)
-    ;margin:0px 15px 40px 15px;}
-}
-}
-
-/*@media screen (max-width: 767px){
-.col-md-6{
-        width: calc(100% / 2 - 30px); margin: 15px;}  
-}
-@media screen (min-width: 1200px){
-    .col-lg-4{width: calc(100% / 3  - 30px); margin: 15px;}  
+@media (min-width:1200px){
+    @for $i from 1 through 12 {
+        .col-lg-#{$i}{
+            --num: calc(12 / #{$i});
+            width: calc(100% / var(--num) - 30px);
+            margin: 0px 15px 40px 15px;
+        }
     }
+}
+
+
+@media (min-width:768px){
+    .order-md-1{
+        order:-1;
+    }
+}
+.order-1{
+    order:-1;}
+/*@media (min-width:768px){
+    .order-md-1{
+        order:-1;
+    }
+}
+
 */
 /*上右下左*/
 /*margin:0px 15px 30px 15px*/
@@ -192,8 +202,9 @@ main img:hover{transition: all .8s ease-in-out;
 /*0620*/
 /*h1{width: 85%;
 background-color: #2e2d2b;}*/
+
 .icon-menu{
-    float: right;
+    /*float: right;*/
     width: 15%;
     display: block;
     background-color: #9bd089;
@@ -201,38 +212,62 @@ background-color: #2e2d2b;}*/
     text-align: center;
 
 }
-
+.flex-space-between{
+    justify-content: space-between;
+}
 /*超過768以上執行*/
-@media (min-width: 768px){.icon-menu{
+/*@media (min-width: 768px){.icon-menu{
     display: none;
-}}
+}}*/
    /*min-width 768 end*/ 
 /*小於767以下執行*/
 @media (max-width: 767px){
 
-   
-
-header> .container > nav{
-    width: 100%;
-    float:left;
-    display:none;
+    /*h1{
+        // width: 85%;
+        float: left;
+    }
+    */
+    nav{
+        //viewport width
+        left: -100vw;
+        transition: all .3s;}
+    
+    .icon-menu:hover + nav{
+    left:0px
+    }
+    
+header{
+    position: relative;
 }
-header> .container > nav.active{
+header> .container nav{
+    width: 100%;
+    position:absolute;
+    top:65px;
+    left:0px;
+    background-color: #5c7767;
+   /* float:left;*/
+    /*display:none;*/
+}
+}
+header> .containerb nav.active{
     display:block;
 }
-header> .container > nav>ul{
+header> .container nav>ul{
    display: block;
 }
-header> .container > nav>ul>li{
+header> .container nav>ul>li{
     width: 100%;
    
  }
- header> .container > nav>ul>li>a{
+ header> .container nav>ul>li>a{
     display: block;
  }
-.overflow-hidden{
-    overflow: hidden;}
-}
+/*.overflow-hidden{
+    overflow: hidden;}*/
+
+
+main>div>h1{margin-left: 10px;}
 /*max-width 767 end*/
 /*迴圈*/
 @for $i from 1 through 10{
@@ -240,9 +275,6 @@ header> .container > nav>ul>li{
     font-size:$i*1em;}
 }
 
-order.md{
-display: flex;
-order:1
-}
+
 
 

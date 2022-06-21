@@ -7,20 +7,21 @@ head
   link(rel='stylesheet' href='public/css/styles.css')
 body
   header
-    .container.overflow-hidden
-      a.icon-menu(href="#") menu 
-      h1
-        a(href='#') kumo's Portfolio
-      nav
-        ul
-          li
-            a(href='pug/index.pug') 自我介紹
-          li
-            a(href='#') 學習歷程
-          li
-            a(href='design-list.html') 網頁設計作品
-          li
-            a(href='#') APP設計作品
+    .container
+      .row.flex-space-between 
+        h1
+          a(href='#') kumo's Portfolio
+        a.icon-menu(href="#") menu 
+          nav
+            ul
+              li
+                a(href='aboutme.html') 自我介紹
+              li
+                a(href='#') 學習歷程
+              li
+                a(href='design-list.html') 網頁設計作品
+              li
+                a(href='#') APP設計作品
 
   .container
      h2.text-center 作品預覽
