@@ -14,6 +14,7 @@ a{text-decoration: none;}
     width: 80%;
     max-width: 1140px;
     /*background-color: rgb(235, 217, 189);*/
+    
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 10px;
@@ -31,10 +32,47 @@ header>.container nav>ul{
 header>.container nav>ul>li>a{
     line-height: 50px;
     color:#eee4d2;
-    font-size: 20px;
-    padding-left: 80px;
-    padding-right:80px;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
     text-align: center;
+    border-bottom:1pX solid #2b3630;
+}
+@media(min-width:768px){
+    header>.container nav{width:100%;}
+
+header>.container nav>ul>li{
+    position:relative;
+}
+header>.container nav>ul>li:hover.submenu{
+    display: block;
+}
+header{position:relative}
+header h1{
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%)//向X軸項回去50%
+}
+header nav {
+    display: flex;
+    justify-content: center;
+}
+header>.container nav>ul>li{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header>.container nav>ul>li:nth-child(2){margin-right: 210px;}
+
+
+
+
+
+.submenu{
+    position: absolute;
+    background-color: rgb(58, 59, 57);
+width: 100%;
+left:0px;
+top:65px;}
+
 }
 /*---------header-end---------*/
 
@@ -88,6 +126,7 @@ margin:15px;}
             width: calc(100% / var(--num) - 30px);
             margin: 0px 15px 40px 15px;
         }
+
     }
 }
 /*1200*/
@@ -216,9 +255,9 @@ background-color: #2e2d2b;}*/
     justify-content: space-between;
 }
 /*超過768以上執行*/
-/*@media (min-width: 768px){.icon-menu{
+@media (min-width: 768px){.icon-menu{
     display: none;
-}}*/
+}}
    /*min-width 768 end*/ 
 /*小於767以下執行*/
 @media (max-width: 767px){
@@ -245,7 +284,7 @@ header> .container nav{
     position:absolute;
     top:65px;
     /*滑入*/
-    left:0pt;
+    left:100vw;
     background-color: #5c7767;
    /* float:left;*/
     /*display:none;*/
