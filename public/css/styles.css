@@ -23,7 +23,7 @@ a {
 
 .container {
   margin: auto;
-  width: 80%;
+  width: 100%;
   max-width: 1140px;
   /*background-color: rgb(235, 217, 189);*/
   padding-right: 20px;
@@ -38,11 +38,12 @@ header > .container h1 > a {
 
 header > .container nav > ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 10px;
 }
 
 header > .container nav > ul > li > a {
-  line-height: 50px;
+  line-height: 40px;
   color: #eee4d2;
   font-size: 1.2em;
   letter-spacing: 1.5px;
@@ -83,8 +84,9 @@ header > .container nav > ul > li > a {
     margin-right: 20px;
   }
 
-  header > .container nav > ul > li:nth-child(2) {
-    margin-right: 210px;
+  header > .container nav > ul > li:nth-child(3) {
+    margin-right: 100px;
+    margin-left: 220px;
   }
 
   .submenu {
@@ -451,9 +453,11 @@ main div p {
   color: #37483d;
 }
 
-.col-9 h3 {
+.col-lg-10 h3 {
   color: #3d5446;
   font-size: 22px;
+  box-sizing: border-box;
+  padding-left: 35px;
 }
 
 /*animation*/
@@ -555,43 +559,39 @@ background-color: #2e2d2b;}*/
     /* float:left;*/
     /*display:none;*/
   }
-}
-header > .containerb nav.active {
-  display: block;
-}
 
-header > .container nav > ul {
-  display: block;
-}
+  header > .containerb nav.active {
+    display: block;
+  }
 
-header > .container nav > ul > li {
-  width: 100%;
-}
+  header > .container nav > ul > li {
+    width: 100%;
+  }
 
-header > .container nav > ul > li > a {
-  display: block;
-}
+  header > .container nav > ul > li > a {
+    display: block;
+  }
 
-.submenu {
-  background-color: #2b3630;
-  display: none;
-}
+  .submenu {
+    background-color: #2b3630;
+    display: none;
+  }
 
-header > .container nav > ul > li:hover .submenu {
-  display: block;
-}
+  header > .container nav > ul > li:hover .submenu {
+    display: block;
+  }
 
-.submenu > li {
-  line-height: 30pt;
-  border-bottom: 1px solid black;
-}
+  .submenu > li {
+    line-height: 30pt;
+    border-bottom: 1px solid black;
+  }
 
-.submenu > li > a {
-  color: #eee4d2;
-  display: block;
-  text-align: center;
+  .submenu > li > a {
+    color: #eee4d2;
+    display: block;
+    text-align: center;
+  }
 }
-
 /*.overflow-hidden{
     overflow: hidden;}*/
 main > div > h1 {
