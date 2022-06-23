@@ -36,7 +36,6 @@ header>.container nav>ul>li>a{
     font-size: 1.2em;
     letter-spacing: 1.5px;
     text-align: center;
-    border-bottom:1pX solid #2b3630;
 }
 @media(min-width:768px){
     header>.container nav{width:100%;}
@@ -69,12 +68,15 @@ header>.container nav>ul>li:nth-child(3){margin-right: 100px;margin-left: 220px;
 
 
 .submenu{
+    display: none;
     position: absolute;
     background-color: rgb(58, 59, 57);
 width: 100%;
 left:0px;
-top:65px;}
-
+top:30px;}
+.submenu a{color:#eee4d2;line-height: 30px;display: block;text-align: center;
+}   
+nav li:hover>.submenu{display: block;}
 }
 /*---------header-end---------*/
 
@@ -147,9 +149,9 @@ margin:15px;}
     .order-md-1{
         order:-1;
     }
+    
 }
-.order-1{
-    order:-1;}
+    
 /*@media (min-width:768px){
     .order-md-1{
         order:-1;
@@ -324,6 +326,8 @@ display:none;
 
 main>div>h1{margin-left: 10px;}
 /*max-width 767 end*/
+
+
 /*迴圈*/
 @for $i from 1 through 10{
     .fz-#{$i}{
